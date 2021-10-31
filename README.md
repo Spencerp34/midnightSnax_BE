@@ -1,1 +1,2 @@
-# This is a Backend repository for my website MidnightSnax. Just a fun way to show my learning in the best way.
+# MidnightSnax
+Just a fun way to show my learning in the best way.
