@@ -1,5 +1,5 @@
 {
-  "name": "build-week-scaffolding-node",
+  "name": "midnight-snax",
   "version": "1.0.0",
   "scripts": {
     "start": "node index.js",
@@ -7,10 +7,11 @@
     "migrate": "knex migrate:latest",
     "rollback": "knex migrate:rollback",
     "seed": "knex seed:run",
-    "migrateh": "heroku run knex migrate:latest -a YOUR_HEROKU_APP_NAME",
-    "rollbackh": "heroku run knex migrate:rollback -a YOUR_HEROKU_APP_NAME",
-    "databaseh": "heroku pg:psql -a YOUR_HEROKU_APP_NAME",
-    "seedh": "heroku run knex seed:run -a YOUR_HEROKU_APP_NAME",
+    "migrateh": "heroku run knex migrate:latest -a midnight-snax",
+    "rollbackh": "heroku run knex migrate:rollback -a midnight-snax",
+    "databaseh": "heroku pg:psql -a midnight-snax",
+    "seedh": "heroku run knex seed:run -a midnight-snax",
+    "update": "knex migrate:rollback && knex migrate:latest && knex seed:run",
     "test": "cross-env NODE_ENV=testing jest --watchAll --verbose --runInBand",
     "deploy": "git push heroku main"
   },
